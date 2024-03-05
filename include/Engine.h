@@ -38,7 +38,6 @@ private:
     void initWindow();
     void renderFPSToScreen();
     void initText();
-    void checkBallCollisions();
 
 public:
     // Constructors & Destructors

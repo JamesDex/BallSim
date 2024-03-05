@@ -4,9 +4,18 @@
 #include "../include/CollisionManager.h"
 #include "../include/Engine.h"
 
+void CollisionManager::checkBallCollisions(std::vector<Ball> &balls) {
+    for (int i = 0; i < balls.size(); ++i) {
+        for (int j = i + 1; j < balls.size(); ++j) {
+            if (checkCollision(balls[i], balls[j])) {
+                // Handle collision (e.g., swap velocities)
+                handleCollision(balls[i], balls[j]);
+            }
+        }
+    }
+}
 
 bool CollisionManager::checkCollision(Ball &ball1, Ball &ball2) {
-
     // Pythagorean theorem
     float distance = std::hypot(ball1.getShape().getPosition().x - ball2.getShape().getPosition().x,
                                 ball1.getShape().getPosition().y - ball2.getShape().getPosition().y);
@@ -56,7 +65,7 @@ void CollisionManager::handleCollision(Ball &ball1, Ball &ball2) {
     ball1.setVelocity(v1);
     ball2.setVelocity(v2);
 
-//     Apply damping to simulate more realistic physics
+//  Apply damping to simulate more realistic physics (inefficient)
     for (int i = 0; i < 100; i++) {
         ball1.setVelocity(ball1.getVelocity() * ball1.getDamping());
         ball2.setVelocity(ball2.getVelocity() * ball2.getDamping());
@@ -100,3 +109,4 @@ void CollisionManager::handleBorderCollision(Ball &ball, sf::Vector2u windowSize
 
     ball.setPosition(position);
 }
+

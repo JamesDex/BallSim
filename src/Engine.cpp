@@ -20,7 +20,7 @@ void Engine::update() {
 
     pollEvents();
     updateBalls(this->dt);
-    checkBallCollisions();
+    CollisionManager::checkBallCollisions(this->balls);
 
 }
 
@@ -101,18 +101,6 @@ void Engine::toggleGravity() {
             ball.setGravity(gravity);
         }
         isGravityEnabled = true;
-    }
-}
-
-// TODO: Move this to Collision Manager
-void Engine::checkBallCollisions() {
-    for (int i = 0; i < balls.size(); ++i) {
-        for (int j = i + 1; j < balls.size(); ++j) {
-            if (CollisionManager::checkCollision(balls[i], balls[j])) {
-                // Handle collision (e.g., swap velocities)
-                CollisionManager::handleCollision(balls[i], balls[j]);
-            }
-        }
     }
 }
 

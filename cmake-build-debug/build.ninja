@@ -49,33 +49,33 @@ cmake_ninja_workdir = /Users/henry/Documents/SFML/GettingStarted/BouncyBall/cmak
 
 build cmake_object_order_depends_target_HelloSFML: phony || CMakeFiles/HelloSFML.dir
 
-build CMakeFiles/HelloSFML.dir/main.cpp.o: CXX_COMPILER__HelloSFML_unscanned_Debug /Users/henry/Documents/SFML/GettingStarted/BouncyBall/main.cpp || cmake_object_order_depends_target_HelloSFML
-  DEP_FILE = CMakeFiles/HelloSFML.dir/main.cpp.o.d
+build CMakeFiles/HelloSFML.dir/src/main.cpp.o: CXX_COMPILER__HelloSFML_unscanned_Debug /Users/henry/Documents/SFML/GettingStarted/BouncyBall/src/main.cpp || cmake_object_order_depends_target_HelloSFML
+  DEP_FILE = CMakeFiles/HelloSFML.dir/src/main.cpp.o.d
   FLAGS = -std=c++11 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/HelloSFML.dir
-  OBJECT_FILE_DIR = CMakeFiles/HelloSFML.dir
+  OBJECT_FILE_DIR = CMakeFiles/HelloSFML.dir/src
 
-build CMakeFiles/HelloSFML.dir/Ball.cpp.o: CXX_COMPILER__HelloSFML_unscanned_Debug /Users/henry/Documents/SFML/GettingStarted/BouncyBall/Ball.cpp || cmake_object_order_depends_target_HelloSFML
-  DEP_FILE = CMakeFiles/HelloSFML.dir/Ball.cpp.o.d
+build CMakeFiles/HelloSFML.dir/src/Ball.cpp.o: CXX_COMPILER__HelloSFML_unscanned_Debug /Users/henry/Documents/SFML/GettingStarted/BouncyBall/src/Ball.cpp || cmake_object_order_depends_target_HelloSFML
+  DEP_FILE = CMakeFiles/HelloSFML.dir/src/Ball.cpp.o.d
   FLAGS = -std=c++11 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/HelloSFML.dir
-  OBJECT_FILE_DIR = CMakeFiles/HelloSFML.dir
+  OBJECT_FILE_DIR = CMakeFiles/HelloSFML.dir/src
 
-build CMakeFiles/HelloSFML.dir/Engine.cpp.o: CXX_COMPILER__HelloSFML_unscanned_Debug /Users/henry/Documents/SFML/GettingStarted/BouncyBall/Engine.cpp || cmake_object_order_depends_target_HelloSFML
-  DEP_FILE = CMakeFiles/HelloSFML.dir/Engine.cpp.o.d
+build CMakeFiles/HelloSFML.dir/src/Engine.cpp.o: CXX_COMPILER__HelloSFML_unscanned_Debug /Users/henry/Documents/SFML/GettingStarted/BouncyBall/src/Engine.cpp || cmake_object_order_depends_target_HelloSFML
+  DEP_FILE = CMakeFiles/HelloSFML.dir/src/Engine.cpp.o.d
   FLAGS = -std=c++11 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/HelloSFML.dir
-  OBJECT_FILE_DIR = CMakeFiles/HelloSFML.dir
+  OBJECT_FILE_DIR = CMakeFiles/HelloSFML.dir/src
 
-build CMakeFiles/HelloSFML.dir/CollisionManager.cpp.o: CXX_COMPILER__HelloSFML_unscanned_Debug /Users/henry/Documents/SFML/GettingStarted/BouncyBall/CollisionManager.cpp || cmake_object_order_depends_target_HelloSFML
-  DEP_FILE = CMakeFiles/HelloSFML.dir/CollisionManager.cpp.o.d
+build CMakeFiles/HelloSFML.dir/src/CollisionManager.cpp.o: CXX_COMPILER__HelloSFML_unscanned_Debug /Users/henry/Documents/SFML/GettingStarted/BouncyBall/src/CollisionManager.cpp || cmake_object_order_depends_target_HelloSFML
+  DEP_FILE = CMakeFiles/HelloSFML.dir/src/CollisionManager.cpp.o.d
   FLAGS = -std=c++11 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/HelloSFML.dir
-  OBJECT_FILE_DIR = CMakeFiles/HelloSFML.dir
+  OBJECT_FILE_DIR = CMakeFiles/HelloSFML.dir/src
 
 
 # =============================================================================
@@ -85,7 +85,7 @@ build CMakeFiles/HelloSFML.dir/CollisionManager.cpp.o: CXX_COMPILER__HelloSFML_u
 #############################################
 # Link the executable HelloSFML
 
-build HelloSFML: CXX_EXECUTABLE_LINKER__HelloSFML_Debug CMakeFiles/HelloSFML.dir/main.cpp.o CMakeFiles/HelloSFML.dir/Ball.cpp.o CMakeFiles/HelloSFML.dir/Engine.cpp.o CMakeFiles/HelloSFML.dir/CollisionManager.cpp.o | /opt/homebrew/lib/libsfml-graphics.2.6.1.dylib /opt/homebrew/lib/libsfml-audio.2.6.1.dylib /opt/homebrew/lib/libsfml-network.2.6.1.dylib /opt/homebrew/lib/libsfml-window.2.6.1.dylib /opt/homebrew/lib/libsfml-system.2.6.1.dylib
+build HelloSFML: CXX_EXECUTABLE_LINKER__HelloSFML_Debug CMakeFiles/HelloSFML.dir/src/main.cpp.o CMakeFiles/HelloSFML.dir/src/Ball.cpp.o CMakeFiles/HelloSFML.dir/src/Engine.cpp.o CMakeFiles/HelloSFML.dir/src/CollisionManager.cpp.o | /opt/homebrew/lib/libsfml-graphics.2.6.1.dylib /opt/homebrew/lib/libsfml-audio.2.6.1.dylib /opt/homebrew/lib/libsfml-network.2.6.1.dylib /opt/homebrew/lib/libsfml-window.2.6.1.dylib /opt/homebrew/lib/libsfml-system.2.6.1.dylib
   FLAGS = -std=c++11 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
   LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/lib  /opt/homebrew/lib/libsfml-graphics.2.6.1.dylib  /opt/homebrew/lib/libsfml-audio.2.6.1.dylib  /opt/homebrew/lib/libsfml-network.2.6.1.dylib  /opt/homebrew/lib/libsfml-window.2.6.1.dylib  /opt/homebrew/lib/libsfml-system.2.6.1.dylib
   OBJECT_DIR = CMakeFiles/HelloSFML.dir
