@@ -1,6 +1,4 @@
-//
-// Created by Henry Cowsert on 3/1/24.
-//
+
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>

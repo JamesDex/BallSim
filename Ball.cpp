@@ -1,6 +1,4 @@
-//
-// Created by Henry Cowsert on 3/1/24.
-//
+
 #include <iostream>
 #include "Ball.h"
 #include "Engine.h"

@@ -1,6 +1,3 @@
-//
-// Created by Henry Cowsert on 3/1/24.
-//
 
 #include "Engine.h"
 #include "CollisionManager.h"

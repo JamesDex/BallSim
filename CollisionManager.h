@@ -1,6 +1,3 @@
-//
-// Created by Henry Cowsert on 3/4/24.
-//
 
 #ifndef BOUNCYBALL_COLLISIONMANAGER_H
 #define BOUNCYBALL_COLLISIONMANAGER_H

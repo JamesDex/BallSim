@@ -1,6 +1,3 @@
-//
-// Created by Henry Cowsert on 3/4/24.
-//
 
 #include <cmath>
 #include "Ball.h"
