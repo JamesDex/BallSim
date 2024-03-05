@@ -1,8 +1,8 @@
 
 #include <cmath>
-#include "Ball.h"
-#include "CollisionManager.h"
-#include "Engine.h"
+#include "../include/Ball.h"
+#include "../include/CollisionManager.h"
+#include "../include/Engine.h"
 
 
 bool CollisionManager::checkCollision(Ball &ball1, Ball &ball2) {

@@ -1,8 +1,8 @@
 
 #include <iostream>
-#include "Ball.h"
-#include "Engine.h"
-#include "CollisionManager.h"
+#include "../include/Ball.h"
+#include "../include/Engine.h"
+#include "../include/CollisionManager.h"
 
 Ball::Ball(float radius, sf::Vector2f position, sf::Vector2u windowSize) {
 

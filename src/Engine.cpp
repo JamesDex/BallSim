@@ -1,6 +1,6 @@
 
-#include "Engine.h"
-#include "CollisionManager.h"
+#include "../include/Engine.h"
+#include "../include/CollisionManager.h"
 
 // Constructor & Destructor
 Engine::Engine() {
@@ -131,9 +131,9 @@ void Engine::initWindow() {
 }
 
 void Engine::initText() {
-    if (!textFont.loadFromFile("arial.ttf")) {
+    if (!textFont.loadFromFile("Assets/Fonts/arial.ttf")) {
         // Handle font loading error
-        printf("error");
+        std::cerr << "Check file path";
     }
     fpsText.setFont(textFont);
     fpsText.setCharacterSize(20);

@@ -3,13 +3,13 @@ project(BouncyBall)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp
-        Ball.cpp
-        Ball.h
-        Engine.cpp
-        Engine.h
-        CollisionManager.cpp
-        CollisionManager.h)
+set(SOURCE_FILES src/main.cpp
+        src/Ball.cpp
+        include/Ball.h
+        src/Engine.cpp
+        include/Engine.h
+        src/CollisionManager.cpp
+        include/CollisionManager.h)
 add_executable(HelloSFML ${SOURCE_FILES})
 include_directories(/usr/local/include)
 
