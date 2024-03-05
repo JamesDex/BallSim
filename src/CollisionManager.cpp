@@ -63,8 +63,6 @@ void CollisionManager::handleCollision(Ball &ball1, Ball &ball2) {
     }
 }
 
-
-// TODO: The balls stick in the walls. FIX
 void CollisionManager::handleBorderCollision(Ball &ball, sf::Vector2u windowSize) {
 
     sf::Vector2f position = ball.getShape().getPosition();
