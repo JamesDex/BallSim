@@ -57,8 +57,7 @@ void Engine::pollEvents() {
 
             case sf::Event::MouseButtonPressed:
                 if (this->event.mouseButton.button == sf::Mouse::Left) {
-                    sf::Vector2f mousePos = sf::Vector2f(sf::Mouse::getPosition(*this->window));
-
+                    //sf::Vector2f mousePos = sf::Vector2f(sf::Mouse::getPosition(*this->window));
                 }
         }
     }
@@ -78,7 +77,7 @@ void Engine::renderBalls() {
 
 void Engine::spawnBall() {
 
-    float radius = std::rand() % 10 + 15;
+    float radius = 5;
     //std::rand() %  int
     this->balls.emplace_back(Ball(radius, sf::Vector2f(100, 200), getWindowSize()));
 }
@@ -113,9 +112,9 @@ void Engine::initVariables() {
 }
 
 void Engine::initWindow() {
-    this->videoMode.height = 600;
-    this->videoMode.width = 800;
-    this->window = new sf::RenderWindow(this->videoMode, "BouncyBall", sf::Style::Titlebar | sf::Style::Close);
+    this->videoMode.height = 800;
+    this->videoMode.width = 1300;
+    this->window = new sf::RenderWindow(this->videoMode, "Ball Simulator", sf::Style::Titlebar | sf::Style::Close);
 }
 
 void Engine::initText() {
@@ -143,7 +142,3 @@ sf::RenderWindow& Engine::getWindow() {
 sf::Vector2u Engine::getWindowSize() {
     return getWindow().getSize();
 }
-
-
-
-

@@ -6,6 +6,7 @@
 
 Ball::Ball(float radius, sf::Vector2f position, sf::Vector2u windowSize) {
 
+    //TODO: make init shape function
     shape.setRadius(radius);
     shape.setPosition(position);
     sf::Color color = sf::Color(rand() % 256,rand() % 256,rand() % 256);
@@ -20,7 +21,7 @@ Ball::Ball(float radius, sf::Vector2f position, sf::Vector2u windowSize) {
 
     // Damping Factor to simulate energy loss
     setDamping(0.999915f);
-
+//0.999915f
     // Mass of object relative to radius
     setMass(4.0f / 3.0f * 3.14159265359f * std::pow(radius, 3));
 
@@ -28,8 +29,6 @@ Ball::Ball(float radius, sf::Vector2f position, sf::Vector2u windowSize) {
     setVelocity(sf::Vector2f(1000, 200.0f));
 
 }
-
-
 
 Ball::Ball() {
 
@@ -53,7 +52,6 @@ void Ball::update(float dt) {
     }
 
     CollisionManager::handleBorderCollision(*this, windowSize);
-
 }
 
 void Ball::render(sf::RenderTarget &target) {
@@ -68,7 +66,6 @@ void Ball::grabBall() {
 void Ball::releaseBall() {
     grabbed = false;
 }
-
 
 // Getters
 
@@ -107,7 +104,6 @@ bool Ball::isGrabbed() {
 }
 
 
-
 // Setters
 
 void Ball::setVelocity(sf::Vector2f newVelocity) {
@@ -133,6 +129,3 @@ void Ball::setMass(float mass) {
 void Ball::setGravity(float newGravity) {
     this->gravity = newGravity;
 }
-
-
-

@@ -10,9 +10,10 @@ set(SOURCE_FILES src/main.cpp
         include/Engine.h
         src/CollisionManager.cpp
         include/CollisionManager.h)
-add_executable(HelloSFML ${SOURCE_FILES})
+
+add_executable(BallSimulation ${SOURCE_FILES})
 include_directories(/usr/local/include)
 
 find_package(SFML 2.5 COMPONENTS system window graphics network audio REQUIRED)
 include_directories(${SFML_INCLUDE_DIRS})
-target_link_libraries(HelloSFML sfml-system sfml-window sfml-graphics sfml-audio sfml-network)
+target_link_libraries(BallSimulation sfml-system sfml-window sfml-graphics sfml-audio sfml-network)
